@@ -1,0 +1,8 @@
+POST http://garrin.com:3000/auth/signup
+Content-Type: application/json
+
+
+{
+    "email": "asd@ad.com",
+    "password": "avbs"
+}

@@ -39,6 +39,8 @@ const RAW_RUNTIME_STATE =
           ["@types/supertest", "npm:6.0.2"],\
           ["@typescript-eslint/eslint-plugin", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:6.21.0"],\
+          ["class-transformer", "npm:0.5.1"],\
+          ["class-validator", "npm:0.14.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:9.1.0"],\
           ["eslint-plugin-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:5.1.3"],\
@@ -1503,8 +1505,8 @@ const RAW_RUNTIME_STATE =
           ["@types/class-validator", null],\
           ["@types/reflect-metadata", null],\
           ["@types/rxjs", null],\
-          ["class-transformer", null],\
-          ["class-validator", null],\
+          ["class-transformer", "npm:0.5.1"],\
+          ["class-validator", "npm:0.14.1"],\
           ["iterare", "npm:1.2.1"],\
           ["reflect-metadata", "npm:0.2.2"],\
           ["rxjs", "npm:7.8.1"],\
@@ -2223,6 +2225,15 @@ const RAW_RUNTIME_STATE =
           ["@types/supertest", "npm:6.0.2"],\
           ["@types/methods", "npm:1.1.4"],\
           ["@types/superagent", "npm:8.1.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/validator", [\
+      ["npm:13.11.9", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-validator-npm-13.11.9-ac3f0e748e-10c0.zip/node_modules/@types/validator/",\
+        "packageDependencies": [\
+          ["@types/validator", "npm:13.11.9"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3562,6 +3573,27 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/cjs-module-lexer-npm-1.2.3-9d788a3c14-10c0.zip/node_modules/cjs-module-lexer/",\
         "packageDependencies": [\
           ["cjs-module-lexer", "npm:1.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["class-transformer", [\
+      ["npm:0.5.1", {\
+        "packageLocation": "../../.yarn/berry/cache/class-transformer-npm-0.5.1-96b5161e6c-10c0.zip/node_modules/class-transformer/",\
+        "packageDependencies": [\
+          ["class-transformer", "npm:0.5.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["class-validator", [\
+      ["npm:0.14.1", {\
+        "packageLocation": "../../.yarn/berry/cache/class-validator-npm-0.14.1-f0ce3b1130-10c0.zip/node_modules/class-validator/",\
+        "packageDependencies": [\
+          ["class-validator", "npm:0.14.1"],\
+          ["@types/validator", "npm:13.11.9"],\
+          ["libphonenumber-js", "npm:1.10.59"],\
+          ["validator", "npm:13.11.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6603,6 +6635,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["libphonenumber-js", [\
+      ["npm:1.10.59", {\
+        "packageLocation": "../../.yarn/berry/cache/libphonenumber-js-npm-1.10.59-65b6a9ea94-10c0.zip/node_modules/libphonenumber-js/",\
+        "packageDependencies": [\
+          ["libphonenumber-js", "npm:1.10.59"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lines-and-columns", [\
       ["npm:1.2.4", {\
         "packageLocation": "../../.yarn/berry/cache/lines-and-columns-npm-1.2.4-d6c7cc5799-10c0.zip/node_modules/lines-and-columns/",\
@@ -9467,6 +9508,8 @@ const RAW_RUNTIME_STATE =
           ["@types/supertest", "npm:6.0.2"],\
           ["@typescript-eslint/eslint-plugin", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:6.21.0"],\
+          ["class-transformer", "npm:0.5.1"],\
+          ["class-validator", "npm:0.14.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:9.1.0"],\
           ["eslint-plugin-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:5.1.3"],\
@@ -9531,6 +9574,15 @@ const RAW_RUNTIME_STATE =
           ["@jridgewell/trace-mapping", "npm:0.3.25"],\
           ["@types/istanbul-lib-coverage", "npm:2.0.6"],\
           ["convert-source-map", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["validator", [\
+      ["npm:13.11.0", {\
+        "packageLocation": "../../.yarn/berry/cache/validator-npm-13.11.0-f0143e2784-10c0.zip/node_modules/validator/",\
+        "packageDependencies": [\
+          ["validator", "npm:13.11.0"]\
         ],\
         "linkType": "HARD"\
       }]\
