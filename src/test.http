@@ -2,7 +2,7 @@ POST http://garrin.com:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "as12331d@ad.com",
+    "email": "test3@test.com",
     "password": "avbs"
 }
 
@@ -26,7 +26,7 @@ GET http://garrin.com:3000/auth?email=asd@ad.com
 
 ###
 
-DELETE  http://garrin.com:3000/auth/2
+DELETE  http://garrin.com:3000/auth/7
 
 ###
 
@@ -36,5 +36,40 @@ Content-Type: "application/json"
 {
     "email" : "a@a.com"
 }
+
+###
+GET http://garrin.com:3000/auth/getCurrentUser
+
+###
+
+POST http://garrin.com:3000/auth/signout
+
+###
+
+POST http://garrin.com:3000/reports
+Content-Type: application/json
+
+{
+    "make": "toyota",
+    "model": "corolla",
+    "year": 1982,
+    "mileage": 102000,
+    "lng": 25,
+    "lat": 34,
+    "price": 53440
+}
+
+###
+
+PATCH http://garrin.com:3000/reports/7
+Content-Type: application/json
+
+{
+    "approved": true
+}
+
+###
+
+GET http://garrin.com:3000/reports?make=toyota&model=corolla&lng=25&lat=36&mileage=20000&year=1980
 
 ###

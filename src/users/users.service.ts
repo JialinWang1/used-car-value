@@ -9,21 +9,15 @@ export class UsersService {
 
   create(email: string, password: string) {
     const user = this.repo.create({ email, password })
-    console.log(user)
     return this.repo.save(user)
   }
 
-  async findOneById(id: number) {
+  findOneById(id: number) {
     if (!id) return null
-    const user = await this.repo.findOneBy({ id })
-    if (!user) {
-      throw new NotFoundException(`user with ID: ${id} not found`)
-    }
-    return user
+    return this.repo.findOneBy({ id })
   }
 
   find(email: string) {
-    console.log(email)
     return this.repo.findBy({ email })
   }
 

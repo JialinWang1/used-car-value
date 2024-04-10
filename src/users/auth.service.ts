@@ -3,7 +3,11 @@ import { UsersService } from './users.service'
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common'
 import { promisify } from 'util'
 
-const scrypt = promisify(_scrypt) as (password: BinaryLike, salt: BinaryLike, keylen: number) => Promise<Buffer>
+const scrypt = promisify(_scrypt) as (
+  password: BinaryLike,
+  salt: BinaryLike,
+  keylen: number
+) => Promise<Buffer>
 
 @Injectable()
 export class AuthService {

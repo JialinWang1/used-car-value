@@ -1,4 +1,17 @@
-import { Body, Controller, Delete, Get, HttpCode, Param, Patch, Post, Query, Session, UseGuards } from '@nestjs/common'
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  HttpCode,
+  NotFoundException,
+  Param,
+  Patch,
+  Post,
+  Query,
+  Session,
+  UseGuards
+} from '@nestjs/common'
 import { CreateUserDto } from './dtos/create-user.dto'
 import { UsersService } from './users.service'
 import { UpdateUserDto } from './dtos/update-user.dto'
@@ -44,8 +57,12 @@ export class UsersController {
   }
 
   @Get(':id')
-  findUser(@Param('id') id: string) {
-    return this.usersService.findOneById(+id)
+  async findUser(@Param('id') id: string) {
+    const user = await this.usersService.findOneById(+id)
+    if (!user) {
+      throw new NotFoundException(`user with ID: ${id} not found`)
+    }
+    return user
   }
 
   @Get()

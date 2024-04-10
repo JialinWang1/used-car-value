@@ -5,5 +5,8 @@ export class UserDto {
   id: number
 
   @Expose()
+  administrator: boolean
+
+  @Expose()
   email: string
 }

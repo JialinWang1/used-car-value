@@ -1,20 +1,19 @@
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
-import { ValidationPipe } from '@nestjs/common'
-import cookieSession from 'cookie-session'
+import { setUpApp } from './setup-app'
+import { UserEntity } from './users/user.entity'
+
+declare global {
+  namespace Express {
+    interface Request {
+      currentUser?: UserEntity
+    }
+  }
+}
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule)
-  app.useGlobalPipes(
-    new ValidationPipe({
-      whitelist: true
-    })
-  )
-  app.use(
-    cookieSession({
-      keys: ['123']
-    })
-  )
+  setUpApp(app)
   await app.listen(3000)
 }
 bootstrap()

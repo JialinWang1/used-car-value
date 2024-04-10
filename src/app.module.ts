@@ -6,15 +6,22 @@ import { ReportsModule } from './reports/reports.module'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { UserEntity } from './users/user.entity'
 import { ReportEntity } from './reports/report.entity'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import { TypeOrmConfigService } from './config/typeorm.config'
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'sqlite',
-      database: 'db.sqlite',
-      entities: [UserEntity, ReportEntity],
-      synchronize: true
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: `.env.${process.env.NODE_ENV}`
     }),
+    TypeOrmModule.forRootAsync({ useClass: TypeOrmConfigService }),
+    // TypeOrmModule.forRoot({
+    //   type: 'sqlite',
+    //   database: 'db.sqlite',
+    //   entities: [UserEntity, ReportEntity],
+    //   synchronize: true
+    // }),
     UsersModule,
     ReportsModule
   ],

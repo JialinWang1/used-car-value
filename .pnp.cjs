@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@nestjs/cli", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.2"],\
           ["@nestjs/common", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
+          ["@nestjs/config", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:3.2.2"],\
           ["@nestjs/core", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
           ["@nestjs/platform-express", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
           ["@nestjs/schematics", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.1.1"],\
@@ -43,6 +44,7 @@ const RAW_RUNTIME_STATE =
           ["class-transformer", "npm:0.5.1"],\
           ["class-validator", "npm:0.14.1"],\
           ["cookie-session", "npm:2.1.0"],\
+          ["cross-env", "npm:7.0.3"],\
           ["crypto", "npm:1.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:9.1.0"],\
@@ -1524,6 +1526,36 @@ const RAW_RUNTIME_STATE =
           "class-transformer",\
           "class-validator",\
           "reflect-metadata",\
+          "rxjs"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nestjs/config", [\
+      ["npm:3.2.2", {\
+        "packageLocation": "../../.yarn/berry/cache/@nestjs-config-npm-3.2.2-7c4baa6b43-10c0.zip/node_modules/@nestjs/config/",\
+        "packageDependencies": [\
+          ["@nestjs/config", "npm:3.2.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:3.2.2", {\
+        "packageLocation": "./.yarn/__virtual__/@nestjs-config-virtual-231b6d2b65/3/.yarn/berry/cache/@nestjs-config-npm-3.2.2-7c4baa6b43-10c0.zip/node_modules/@nestjs/config/",\
+        "packageDependencies": [\
+          ["@nestjs/config", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:3.2.2"],\
+          ["@nestjs/common", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
+          ["@types/nestjs__common", null],\
+          ["@types/rxjs", null],\
+          ["dotenv", "npm:16.4.5"],\
+          ["dotenv-expand", "npm:10.0.0"],\
+          ["lodash", "npm:4.17.21"],\
+          ["rxjs", "npm:7.8.1"],\
+          ["uuid", "npm:9.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@nestjs/common",\
+          "@types/nestjs__common",\
+          "@types/rxjs",\
           "rxjs"\
         ],\
         "linkType": "HARD"\
@@ -4022,6 +4054,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["cross-env", [\
+      ["npm:7.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/cross-env-npm-7.0.3-96d81820f4-10c0.zip/node_modules/cross-env/",\
+        "packageDependencies": [\
+          ["cross-env", "npm:7.0.3"],\
+          ["cross-spawn", "npm:7.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["cross-spawn", [\
       ["npm:7.0.3", {\
         "packageLocation": "../../.yarn/berry/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-10c0.zip/node_modules/cross-spawn/",\
@@ -4306,6 +4348,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/dotenv-npm-16.4.5-bcb20eb95d-10c0.zip/node_modules/dotenv/",\
         "packageDependencies": [\
           ["dotenv", "npm:16.4.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dotenv-expand", [\
+      ["npm:10.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/dotenv-expand-npm-10.0.0-fa5b032ad9-10c0.zip/node_modules/dotenv-expand/",\
+        "packageDependencies": [\
+          ["dotenv-expand", "npm:10.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9602,6 +9653,7 @@ const RAW_RUNTIME_STATE =
           ["used-car-value", "workspace:."],\
           ["@nestjs/cli", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.2"],\
           ["@nestjs/common", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
+          ["@nestjs/config", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:3.2.2"],\
           ["@nestjs/core", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
           ["@nestjs/platform-express", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.3.7"],\
           ["@nestjs/schematics", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:10.1.1"],\
@@ -9617,6 +9669,7 @@ const RAW_RUNTIME_STATE =
           ["class-transformer", "npm:0.5.1"],\
           ["class-validator", "npm:0.14.1"],\
           ["cookie-session", "npm:2.1.0"],\
+          ["cross-env", "npm:7.0.3"],\
           ["crypto", "npm:1.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:9b62c4cd9ac8b46cde02342645383fe738239520dfc13853581949f623ff2335914a48f7e048c201373acf09f4ab6c1fb1f10e9ed5cc1d0852edbf3e752ba191#npm:9.1.0"],\
